@@ -27,23 +27,10 @@
 #         equacao += f"{num} {op} "
 #         print(equacao)
 
-import math
-import sys
-from os import rename
 
 import requests
-
-print(sys.version)
-print(sys.executable)
-
-
-def greet(Who):
-    greeting = f"Hello, {Who}"
-    return greeting
 
 
 r = requests.get("https://coreyms.com")
 print(r.status_code)
-""" name = input("Your name? ")
-print(f"Hello, {name}!")
- """
+print(r.ok)
